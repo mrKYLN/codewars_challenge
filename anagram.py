@@ -20,4 +20,7 @@ def anagram_counter(words):
         
         return result                
                 
-anagram_counter(['dell', 'ledl', 'abc', 'cba', 'bca', 'bac', 'cab'])
+Test.assert_equals(anagram_counter([]), 0, "Is not returning a number")
+Test.assert_equals(anagram_counter(['dell', 'ledl', 'abc', 'cba']), 2)
+Test.assert_equals(anagram_counter(['dell', 'ledl', 'lled', 'cba']), 3)
+Test.assert_equals(anagram_counter(['dell', 'ledl', 'abc', 'cba', 'bca', 'bac', 'cab']), 11)
